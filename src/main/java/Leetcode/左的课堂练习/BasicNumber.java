@@ -87,5 +87,10 @@ public class BasicNumber {
 		System.out.println(flag);
 	}
 
+	@Test
+	public void test010(){
+		System.out.println("测试");
+	}
+
 
 }
