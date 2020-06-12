@@ -21,7 +21,7 @@ public class ListNodeUtil {
         a.next = b;
         b.next = c;
         c.next = d;
-        //d.next = e;
+        d.next = e;
 
         return a;
     }

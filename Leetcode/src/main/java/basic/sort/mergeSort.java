@@ -1,8 +1,7 @@
-package zuo.sort;
+package basic.sort;
 
 
 import org.junit.Test;
-import utils.PrintUtil;
 
 import java.util.Arrays;
 
