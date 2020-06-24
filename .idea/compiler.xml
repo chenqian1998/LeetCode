@@ -6,16 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="javaProgram" />
+        <module name="netty" />
+        <module name="场景题" />
+        <module name="语法" />
+        <module name="JUC" />
+        <module name="Leetcode" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Leetcode" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Leetcode" options="-parameters" />
+      <module name="Leetcode" options="" />
     </option>
   </component>
 </project>
