@@ -1,4 +1,4 @@
-package bianrySearch;
+package basic.bianrySearch;
 
 import org.junit.Test;
 
