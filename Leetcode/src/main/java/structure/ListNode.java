@@ -1,11 +1,15 @@
 package structure;
 
+import lombok.ToString;
+
 /**
  * @author Itsuka
  * @version 1.0
  * @date 2020/5/6
  * @description
  */
+
+@ToString
 public class ListNode {
     public int val;
     public ListNode next;
@@ -14,7 +18,11 @@ public class ListNode {
         this.val = val;
     }
 
-
-
-
+    @Override
+    public String toString() {
+        return "ListNode{" +
+            "val=" + val +
+            ", next=" + next +
+            '}';
+    }
 }

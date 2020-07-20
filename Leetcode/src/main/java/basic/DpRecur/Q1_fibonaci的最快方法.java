@@ -56,6 +56,29 @@ public class Q1_fibonaci的最快方法 {
 	}
 
 
+	public int numberPower(int base, int n){
+		int res = 1;
+		int temp = base;
+		// 2^11 ==> 11对应的二进制： 0000 1011
+		// 对应的结果很明显是 2^0 + 2^1 + 2^3 ，就是二进制对应的是1累加起来
+		// base就是2
+		for(int i=n; i!=0; i = i>>1){
+			// 确定哪个位置上是不是1
+			if((i&1) !=0){
+				res = res*temp;
+			}
+			temp = temp*temp;
+		}
+		return res;
+	}
+
+	@Test
+	public void test02(){
+		int base = 2;
+		int n = 6;
+		System.out.println(numberPower(base,n));
+	}
+
 	public int[][] matrixMulti(int[][] m1, int[][] m2) {
 		int[][] res = new int[m1.length][m2[0].length];
 
@@ -71,7 +94,7 @@ public class Q1_fibonaci的最快方法 {
 
 	@Test
 	public void test(){
-		int fibonaci = fibonaci(13);
+		int fibonaci = fibonaci(4);
 		System.out.println(fibonaci);
 	}
 

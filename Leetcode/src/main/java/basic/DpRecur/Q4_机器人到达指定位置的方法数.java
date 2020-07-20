@@ -1,5 +1,11 @@
 package basic.DpRecur;
 
+import org.junit.Test;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+
 /**
  * @author Itsuka
  * @version 1.0
@@ -58,5 +64,24 @@ public class Q4_机器人到达指定位置的方法数 {
 			}
 		}
 		return dp[rest][cur];
+	}
+
+	@Test
+	public void test02(){
+		List<String> strings = Arrays.asList();
+
+		strings.forEach(s -> {
+			System.out.println(s);
+		});
+
+		HashMap<String, String> map = new HashMap<>();
+		map.put("a","c");
+		map.put("b","d");
+		map.get("dd");
+
+		List<String> list = null;
+		for(String s: list){
+			System.out.println(s);
+		}
 	}
 }

@@ -26,6 +26,24 @@ public class ListNodeUtil {
         return a;
     }
 
+    public static ListNode getCircle(){
+        // 5->2->3->1->4
+        ListNode a = new ListNode(5);
+        ListNode b = new ListNode(2);
+        ListNode c = new ListNode(3);
+        ListNode d = new ListNode(1);
+        ListNode e = new ListNode(4);
+
+        a.next = b;
+        b.next = c;
+        c.next = d;
+        d.next = e;
+
+        e.next = a;
+
+        return a;
+    }
+
     public static void printListNode(ListNode head){
         ListNode temp = head;
         while (true){

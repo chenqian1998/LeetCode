@@ -16,7 +16,7 @@ public class Q3_删除链表的中间节点 {
 		}
 		// slow 和 fast 的初始化是怎么做的
 		ListNode slow = head;
-		ListNode fast = head.next;
+		ListNode fast = head.next.next;
 
 		while(fast.next!=null && fast.next.next!=null){
 			slow = slow.next;
